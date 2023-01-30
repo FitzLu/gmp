@@ -10,7 +10,8 @@ package gmp
 // instead of using runtime.SetFinalizer to manage memory?
 
 /*
-#cgo LDFLAGS: -lgmp
+#cgo LDFLAGS: -L/usr/local/lib/ -lgmp
+#cgo CFLAGS: -I/usr/local/include
 #include <gmp.h>
 #include <stdlib.h>
 
